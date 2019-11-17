@@ -1,0 +1,31 @@
+<p>Angular 7 Reactive Form Validation</p>
+<!-- <form>
+
+    <div class="form-group">
+        <label>First Name</label>
+        <input type="text" formCtrlName="firstname" class="form-control">
+    </div>
+</form> -->
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+
+    <label>
+          Full Name:
+          <input type="text" formControlName="fullName">
+    </label>
+
+    <label>
+          Email:
+          <input type="email" formControlemail="email">
+    </label>
+    <label>
+            Password:
+            <input type="text" formControlpassword="password">
+    </label>
+    <label>
+            Re-Enter Password:
+            <input type="text" formControlreEnterPassword="reEnterPassword">
+    </label>
+    <div>
+        <button type="submit" [disabled]="!loginForm.valid">Submit</button>
+    </div>
+</form>
