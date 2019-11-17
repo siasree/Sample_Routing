@@ -1,0 +1,29 @@
+    .container-login {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // background-color: red;
+        // box-shadow: 1px 2px lightgrey;
+        form {
+            padding: 1vw .5vw;
+            width: 400px;
+            height: auto;
+            border: 2px solid red;
+            label {
+                width: 150px;
+                margin: 0 1vw;
+                display: block;
+            }
+            .input[type=text] {
+                width: 200px;
+                margin: 0 1vw;
+            }
+            button {
+                margin: .5vw 1vw;
+            }
+        }
+    }
